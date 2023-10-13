@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+
+</style>
+
+<!-- Values -->
+</form>
+<label for="FirstNumber" style=" position: absolute; bottom: 2.5%; left: 0; width:5%; text-align: center;">Number One:</label>
+<input type="number" style=" position: absolute; bottom: 0; left: 0; width:5%; text-align: center;" id="FirstNumber" name="FirstNumber">
+<label for="SecondNumber" style=" position: absolute; bottom: 2.5%; left: 5%; width:5%; text-align: center;">Number Two:</label>
+<input type="number" style=" position: absolute; bottom: 0; left: 5%; width: 5%; text-align: center;" id="SecondNumber" name="SecondNumber">
+<form>
+
+<!-- Buttons -->
+<button type="button" onclick="Addition()">Add!</button>
+<button type="button" onclick="Subtraction()">Subtract!</button>
+<button type="button" onclick="Multiplication()">Multiply!</button>
+<button type="button" onclick="Division()">Divide!</button>
+
+<!-- Answer Text -->
+<p id="CalculationAnswer" style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;"></p>
+
+<!-- Calculating -->
+<script>
+function Addition() {
+    var first = Number(document.getElementById("FirstNumber").value);
+    var second = Number(document.getElementById("SecondNumber").value);
+    document.getElementById("CalculationAnswer").innerHTML = first + second;
+}
+
+function Subtraction() {
+    var first = Number(document.getElementById("FirstNumber").value);
+    var second = Number(document.getElementById("SecondNumber").value);
+    document.getElementById("CalculationAnswer").innerHTML = first - second;
+}
+
+function Multiplication() {
+    var first = Number(document.getElementById("FirstNumber").value);
+    var second = Number(document.getElementById("SecondNumber").value);
+    document.getElementById("CalculationAnswer").innerHTML = first * second;
+}
+
+function Division() {
+    var first = Number(document.getElementById("FirstNumber").value);
+    var second = Number(document.getElementById("SecondNumber").value);
+    document.getElementById("CalculationAnswer").innerHTML = first / second;
+}
+</script> 
+
+</body>
+</html>
